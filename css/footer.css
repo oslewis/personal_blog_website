@@ -1,0 +1,9 @@
+.footer {
+    grid-area: ft;
+    color: white;
+    background-image: url("../images/sky.jpg");
+    background-size: cover;
+    text-align: left;
+    padding: 2em;
+
+}

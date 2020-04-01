@@ -1,0 +1,86 @@
+@import "social_icons.css";
+@import "nav.css";
+
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0; 
+}
+
+
+.container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: 1fr 740px 1fr;
+      grid-auto-rows: minmax(100px, auto);
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "nav nav nav nav nav nav nav nav"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      
+      align-content: center;
+  }
+  .box{
+    background: rgb(255, 255, 255);
+    align-items: center;
+    }
+
+  .header{
+      grid-area:hd;
+      text-align: center;
+      color: white;
+      background-image: url("../images/sky.jpg");
+      background-size: cover;
+      
+      font: 40px 'Gotu', 'Scada', sans-serif;
+      }
+
+  .footer{
+    grid-area: ft;
+    color: white;
+    padding: 2em;
+    background-image: url("../images/stars.jpg");
+    background-size: cover;
+
+    font: 28px 'Gotu', 'Scada', sans-serif;
+  }
+
+  .nav{
+    grid-area: nav;
+  }
+
+  .content{
+    grid-area: main;
+    width: 65%;
+    padding: 3em;
+
+    
+  }
+
+img {
+    width: 60%;
+}
+
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-family: 'Quattrocento Sans', 'Mukta', sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Gotu', 'Scada', sans-serif;
+}
+
+#content-grid {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}

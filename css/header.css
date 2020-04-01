@@ -1,0 +1,10 @@
+.header {
+    grid-area: hd;
+    color: white;
+    background-image: url("../images/sky.jpg");
+    background-size: cover;
+    text-align: center;
+
+
+}
+
