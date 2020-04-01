@@ -6,9 +6,9 @@
 }
 
 #content-grid {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: minmax(1fr, auto);
+    display: flex;
+    flex-direction: row;
+
 }
 
 .img-style {
@@ -17,4 +17,8 @@
 
 .flex-content {
     font-family: 'Quattrocento Sans', sans-serif;
+}
+
+h1 {
+    font: 28px;
 }
