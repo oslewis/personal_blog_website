@@ -1,10 +1,9 @@
-.header {
-    grid-area: hd;
+.header{
+    grid-area:hd;
+    text-align: center;
     color: white;
     background-image: url("../images/sky.jpg");
     background-size: cover;
-    text-align: center;
-
-
-}
-
+    
+    font: 40px 'Righteous', cursive;
+    }

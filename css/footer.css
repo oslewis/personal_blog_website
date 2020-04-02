@@ -1,18 +1,5 @@
-.footer {
-    grid-area: ft;
-    color: white;
-    background-image: url("../images/sky.jpg");
-    background-size: cover;
-    text-align: left;
-    padding: 2em;
- 
+.footer-title {
+  padding: 8px;
+  font: 55px 'Righteous', cursive;
 
-}
-
-#ftbar {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:60px;   /* Height of the footer */
-   
 }

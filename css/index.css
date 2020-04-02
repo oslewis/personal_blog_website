@@ -1,26 +1,16 @@
-/* ---------- Imports --------------- */
 
-@import "post.css";
-@import "content.css";
-@import "footer.css";
-@import "nav.css";
+/* ---------- Imports --------------- */
 @import "header.css";
 @import "social_icons.css";
-
+@import "nav.css";
+@import "content.css";
+@import "footer.css";
 
 /* ----------------------- */
 
 /* ----------- BY TYPE ------------- */
 html {
-    height: 100%;
     box-sizing: border-box;
-}
-
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
 }
 
 
@@ -28,16 +18,6 @@ body {
     background-color: black;
     padding: 0;
     margin: 0; 
-}
-
-h1,
-h2 {
-    font-family: 'Gotu', 'Scada', sans-serif;
-}
-
-
-li {
-    list-style-type: none;
 }
 
 a, a:hover, a:focus, a:active {
@@ -49,68 +29,64 @@ p {
     font-family: 'Quattrocento Sans', 'Mukta', sans-serif;
 }
 
-/* ------------------ By Type End -------------------------- */
+/* ----------- BY TYPE END ------------- */
 
-.container {
-    display: grid;
-    grid-template-columns: 850px;
-    grid-auto-rows: minmax(1fr, auto);
-    grid-template-areas: "hd"
-                         "nav"
-                         "sd"
-                         "main"
-                         "ft";
+.container{
+    /* Step 1: Set display to grid */
+      display:grid;
+   /* Step 2: setup rows amd columns */
+      /* grid-template-columns: repeat(3, 1fr); */
+      grid-template-columns: 1fr 740px 1fr;
+      grid-auto-rows: minmax(100px, auto);
+      grid-template-areas: 
+      "hd hd hd hd hd hd hd hd"
+      "nav nav nav nav nav nav nav nav"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+      
+      align-content: center;
 }
 
 
-.header,
-.footer {
-    grid-column: 1/4;
+.box {
+    display:flex;
+    flex-direction: row;
+    align-content: stretch;
+    background: rgb(255, 255, 255);
+    align-items: center;
 }
-
 
 .header {
-    grid-area: hd;
+      grid-area:hd;
+      flex-direction: row;
+      justify-content: center;
+      color: white;
+      background-image: url("../images/sky.jpg");
+      background-size: cover;
+      padding: 10px;
+      font: 40px 'Righteous', cursive;
 }
 
-.footer {
+
+.footer{
     grid-area: ft;
-
-}
-
-.content {
-    grid-area: main;
-}
-
-.nav {
-    grid-area: nav;
-}
-
-.sidebar {
-    grid-area: sd;
-}
-
-/* Medium sized screens */
-@media(min-width: 600px) and (max-width: 1100px) {
-    .container {
-        display: grid;
-        grid-template-columns: 50% 25% 25%;
-        grid-auto-rows: 250px 600px;
-        grid-template-areas: "hd hd hd hd hd hd hd hd"
-                             "nav nav nav nav nav nav nav nav"
-                             "main main main main main sd sd sd"
-                             "ft ft ft ft ft ft ft ft";
-    }
-}
-
-/* Large sized screens */
-@media (min-width: 1101px){
-    .container {
-        grid-template-areas: "hd hd hd hd hd hd hd hd"
-                             "nav nav nav nav nav nav nav nav"
-                             "main main main main main sd sd sd"
-                             "ft ft ft ft ft ft ft ft";
-    }
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: url("../images/stars.jpg");
+    background-size: cover;
+    margin: 5px;
+    padding: 5px;
 }
 
 
+.home-images {
+    width: 65%;
+    border-radius: 8px;
+}
+
+
+.article-header {
+    font: bold 28px 'Quattrocento Sans', 'Mukta', sans-serif;
+
+}

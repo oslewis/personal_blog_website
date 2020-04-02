@@ -18,6 +18,7 @@
 .profile-pic {
     width: 100%;
     border-radius: 8px;
+    margin: 3px;
 }
 
 .profile-list {
@@ -27,4 +28,5 @@
 .profile-span {
     font: bold 12px 'Oswald', sans-serif;
     color: rgb(47, 44, 94);
+    padding: 4px;
 }

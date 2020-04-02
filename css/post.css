@@ -2,6 +2,8 @@
 @import "nav.css";
 @import "content.css";
 @import "profile.css";
+@import "header.css";
+@import "footer.css";
 
 body {
     background-color: black;
@@ -25,53 +27,64 @@ body {
       
       align-content: center;
   }
-  .box{
-    display:flex;
-    flex-direction: row;
-    align-content: stretch;
-    background: rgb(255, 255, 255);
-    align-items: center;
-    }
 
-  .header{
-      grid-area:hd;
-      text-align: center;
-      color: white;
-      background-image: url("../images/sky.jpg");
-      background-size: cover;
-      
-      font: 40px 'Gotu', 'Scada', sans-serif;
-      }
+  
+.box{
+  display:flex;
+  flex-direction: row;
+  align-content: stretch;
+  background: rgb(255, 255, 255);
+  align-items: center;
+}
 
-  .footer{
-    grid-area: ft;
-    color: white;
-    padding: 2em;
-    background-image: url("../images/stars.jpg");
-    background-size: cover;
 
-    font: 28px 'Gotu', 'Scada', sans-serif;
-  }
+.header{
+  grid-area:hd;
+  justify-content: center;
+  color: white;
+  background-image: url("../images/sky.jpg");
+  background-size: cover;
+  font: 40px 'Righteous', cursive;
+}
 
-  .nav{
-    grid-area: nav;
-  }
 
-  .content{
-    grid-area: main;
-    width: 65%;
-    padding: 3em;
-
+.footer{
+  grid-area: ft;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url("../images/stars.jpg");
+  background-size: cover;
+  margin: 5px;
+  padding: 5px;
+}
     
-  }
+
+.nav{
+    grid-area: nav;
+}
+
+.content{
+  grid-area: main;
+  width: 65%;
+  padding: 3em;
+
+}
 
 .space-img {
     width: 65%;
     margin: 25px;
     border-radius: 14px;
-    -webkit-box-shadow: 0px 4px 9px 7px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 5px 9px 7px rgba(0,0,0,0.75);
-    box-shadow: 0px 5px 9px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.75);
+    
+}
+
+.space-img:hover {
+  -webkit-box-shadow: 0px 4px 9px 7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 5px 9px 7px rgba(0,0,0,0.75);
+  box-shadow: 0px 5px 9px 7px rgba(0,0,0,0.75);
 }
 
 
@@ -86,7 +99,7 @@ p {
 
 h1,
 h2 {
-    font-family: 'Gotu', 'Scada', sans-serif;
+    font-family: 'Righteous', cursive;
 }
 
 #content-grid {

@@ -1,7 +1,9 @@
 .fa {
+    display: flex;
+    flex-direction: row;
     padding: 15px;
-    font-size: 30px;
-    width: 50px;
+    font-size: 20px;
+    width: 30px;
     text-align: center;
     text-decoration: none;
     margin: 8px 2px;
@@ -32,3 +34,8 @@
     background: #810c1f;
     color: white;
   }
+
+.social {
+  padding-top: 5px;
+  align-content: right;
+}
