@@ -4,42 +4,33 @@
 @import "profile.css";
 @import "header.css";
 @import "footer.css";
-
 body {
-    background-color: black;
-    padding: 0;
-    margin: 0; 
+  background-color: black;
+  padding: 0;
+  margin: 0;
 }
 
+.container {
+  /* Step 1: Set display to grid */
+  display: grid;
+  /* Step 2: setup rows amd columns */
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 1fr 740px 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: "hd hd hd hd hd hd hd hd" "nav nav nav nav nav nav nav nav" "main main main main main main main main" "ft ft ft ft ft ft ft ft";
+  align-content: center;
+}
 
-.container{
-    /* Step 1: Set display to grid */
-      display:grid;
-   /* Step 2: setup rows amd columns */
-      /* grid-template-columns: repeat(3, 1fr); */
-      grid-template-columns: 1fr 740px 1fr;
-      grid-auto-rows: minmax(100px, auto);
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "nav nav nav nav nav nav nav nav"
-      "main main main main main main main main"
-      "ft ft ft ft ft ft ft ft";
-      
-      align-content: center;
-  }
-
-  
-.box{
-  display:flex;
+.box {
+  display: flex;
   flex-direction: row;
   align-content: stretch;
   background: rgb(255, 255, 255);
   align-items: center;
 }
 
-
-.header{
-  grid-area:hd;
+.header {
+  grid-area: hd;
   justify-content: center;
   color: white;
   background-image: url("../images/sky.jpg");
@@ -47,8 +38,7 @@ body {
   font: 40px 'Righteous', cursive;
 }
 
-
-.footer{
+.footer {
   grid-area: ft;
   display: flex;
   flex-direction: column;
@@ -58,58 +48,55 @@ body {
   margin: 5px;
   padding: 5px;
 }
-    
 
-.nav{
-    grid-area: nav;
+.nav {
+  grid-area: nav;
 }
 
-.content{
+.content {
   grid-area: main;
   width: 65%;
   padding: 3em;
-
 }
 
 .space-img {
-    width: 65%;
-    margin: 25px;
-    border-radius: 14px;
-    -webkit-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.75);
-    
+  width: 65%;
+  margin: 25px;
+  border-radius: 14px;
+  -webkit-box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.75);
 }
 
 .space-img:hover {
-  -webkit-box-shadow: 0px 4px 9px 7px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 9px 7px rgba(0,0,0,0.75);
-  box-shadow: 0px 5px 9px 7px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 4px 9px 7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 9px 7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 9px 7px rgba(0, 0, 0, 0.75);
 }
 
-
-a, a:hover, a:focus, a:active {
-    text-decoration: none;
-    color: inherit;
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 p {
-    font-family: 'Quattrocento Sans', 'Mukta', sans-serif;
+  font-family: 'Quattrocento Sans', 'Mukta', sans-serif;
 }
 
 h1,
 h2 {
-    font-family: 'Righteous', cursive;
+  font-family: 'Righteous', cursive;
 }
 
 #content-grid {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
 
-
 .article-header {
-    font: bold 28px 'Quattrocento Sans', 'Mukta', sans-serif;
-
+  font: bold 28px 'Quattrocento Sans', 'Mukta', sans-serif;
 }
