@@ -34,6 +34,10 @@ p {
 }
 
 
+figcaption {
+	display: block;
+  }
+
 /* ----------- BY TYPE END ------------- */
 
 .container {
